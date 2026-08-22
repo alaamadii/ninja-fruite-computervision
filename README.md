@@ -71,6 +71,7 @@ flowchart LR
 ninja-fruite-computervision/
 ├── main.py                      # Application entry point and gameplay orchestration
 ├── config.py                    # Tracking, physics, scoring, and UI configuration
+├── hand_landmarker.task         # MediaPipe hand-landmark model
 ├── requirements.txt
 ├── pyproject.toml               # Ruff configuration
 ├── game/
@@ -84,8 +85,6 @@ ninja-fruite-computervision/
 │   └── hand_tracker_new.py      # MediaPipe Hand Landmarker wrapper
 ├── ui/
 │   └── hud.py                   # Score/lives/combo overlay
-├── models/
-│   └── hand_landmarker.task     # MediaPipe hand-landmark model
 ├── tests/
 │   └── test_core_logic.py       # Game-state, gesture, and fruit-physics tests
 └── .github/workflows/ci.yml     # Automated quality checks
