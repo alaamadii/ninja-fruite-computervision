@@ -82,7 +82,7 @@ ninja-fruite-computervision/
 │   ├── game_manager.py          # Score, combo, lives, and game-over state
 │   └── gesture_detector.py      # Velocity-based slicing detection
 ├── vision/
-│   └── hand_tracker_new.py      # MediaPipe Hand Landmarker wrapper
+│   └── hand_tracker.py          # Canonical MediaPipe Hand Landmarker wrapper
 ├── ui/
 │   └── hud.py                   # Score/lives/combo overlay
 ├── tests/
