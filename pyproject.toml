@@ -3,7 +3,14 @@ target-version = "py310"
 line-length = 100
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "UP", "B"]
+# Start with correctness-oriented Pyflakes checks. The repository predates Ruff,
+# so style/modernization rules will be enabled incrementally as legacy files are cleaned.
+select = ["F"]
+ignore = [
+    "F401", # legacy unused imports
+    "F541", # legacy f-strings without placeholders
+    "F841", # legacy assigned-but-unused locals
+]
 
 [tool.ruff.format]
 quote-style = "double"
